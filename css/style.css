@@ -1,0 +1,49 @@
+:root {
+	--background-color: #cacaaa;
+	--highlight-color: #55868c;
+	--title-color: white;
+	/*--caca : #cacaaa */
+	--small-padding: 0.5rem;
+	--big-padding: 2rem;
+	--font-size: 16px;
+}
+
+html {
+	/*font-size: var(--font-size);*/
+	height: 300vh;
+	background-color: var(--background-color);
+}
+
+.card {
+	background-color: var(--highlight-color);
+	padding: var(--big-padding);
+}
+
+.card.small {
+	padding: var(--small-padding);
+}
+
+.element h3 {
+	color: var(--title-color);
+}
+
+p {
+	color: var(--title-color);
+}
+
+.game {
+	background-color: black;
+	height: 500px;
+	aspect-ratio: 16/9;
+}
+
+.hidden {
+	display: none;
+}
+
+dialog img {
+	width: 300px;
+}
+dialog::backdrop {
+	backdrop-filter: blur(5px) brightness(50%) sepia(70%);
+}
